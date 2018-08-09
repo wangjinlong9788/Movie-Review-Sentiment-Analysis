@@ -1,3 +1,5 @@
+#credit: Anthony MarakisCNN Baseline Model
+
 seed = 0
 
 import random
