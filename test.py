@@ -58,6 +58,11 @@ from keras.models import Sequential
 model = Sequential()
 
 # Input / Embdedding
+#An embedding is a relatively low-dimensional space into which you can translate high-dimensional vectors. 
+#Embeddings make it easier to do machine learning on large inputs like sparse vectors representing words. 
+#Ideally, an embedding captures some of the semantics of the input by placing semantically similar inputs close together
+#in the embedding space. 
+#An embedding can be learned and reused across models.
 model.add(Embedding(max_features, 150, input_length=maxlen))
 
 # CNN
