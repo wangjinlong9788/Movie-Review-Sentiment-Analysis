@@ -40,6 +40,7 @@ def format_data(train, test, max_features, maxlen):
     tokenizer.fit_on_texts(list(X))
 
     X = tokenizer.texts_to_sequences(X)
+    #https://keras-cn.readthedocs.io/en/latest/preprocessing/text/
     X = pad_sequences(X, maxlen=maxlen)
     test_X = tokenizer.texts_to_sequences(test_X)
     test_X = pad_sequences(test_X, maxlen=maxlen)
